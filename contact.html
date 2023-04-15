@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <header>
+        <div class="header__body">
+            <div class="header__logo">
+                <img src="./img/My project.png" alt="" class="logo">
+            </div>
+            <img src="" alt="" class="header__logo">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="/index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./contact.html">
+                        Login
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./form.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>       
+    </header>
+    <div class="box">
+        <div class="box__close">x</div>
+        <h1>Login</h1>
+        <form action="#">
+            <div class="box__form">
+                <span class="box__icon">                  
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </span>
+                <input type="text" required placeholder="Email" class="input__email">
+                <label class="box__label"></label>              
+            </div>
+            <div class="box__form">
+                <span class="box__icon">                    
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <input type="password" required placeholder="Password"  class="input__email">
+                <label class="box__label"></label>
+            </div>
+            <div class="box__remember">
+                <div class="checkbox">
+                    <input type="checkbox">
+                    Remember me
+                </div>
+                <a class="box-remember__password" href="#">Forgot password</a>
+            </div>
+            <button class="box__button" type="submit">Login</button>
+            <div class="box__under">
+                <p class="under__text">Dont have an acount?
+                    <a href="#" class="under__register">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
+</body>
+</html>

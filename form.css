@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://niindo64.files.wordpress.com/2020/03/horizon-zero-dawn-14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.107);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    display: flex;
+
+}
+.header__body {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    transition: 0.7s;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo__text{
+    font-weight: 500;
+    font-family: fantasy;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-item{
+    margin:0 30px;
+    transition: 0.3s;
+}
+.header__menu-item a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.741);
+    font-family: fantasy;
+    font-weight: 500;
+    font-size: 21px;
+    transition: 0.3s;
+}
+.header__menu-item a:hover{
+    color: rgb(240, 21, 21); 
+
+}
+.logo:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}

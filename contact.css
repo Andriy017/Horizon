@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://niindo64.files.wordpress.com/2020/03/horizon-zero-dawn-14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.107);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 120px;
+}
+.header__body {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    transition: 0.7s;
+}
+.header__logo {
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo__text{
+    font-weight: 500;
+    font-family: fantasy;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-item{
+    margin:0 30px;
+    transition: 0.3s;
+}
+.header__menu-item a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.741);
+    font-family: fantasy;
+    font-weight: 500;
+    font-size: 21px;
+    transition: 0.3s;
+}
+.header__menu-item a:hover{
+    color: rgb(240, 21, 21); 
+
+}
+.logo:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.box {
+    width: 400px;
+    height: 450px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+    top: 190px;
+}
+.box__close {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    top: 0;
+    background-color: #055674d8;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 0 20px 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box__close:hover{
+    background-color: rgb(45, 150, 247);
+}
+h1{
+    font-size: 33px;
+    text-align: center;
+    color: #162938 ;
+}
+.box__form {
+    width: 100%;
+    position: relative;
+    border-bottom:2px solid #000;
+    height: 50px;
+    margin: 35px 0;
+}
+input{
+    background: transparent;
+}
+.box__icon {
+    position: absolute;
+    right: 0;
+}
+.fa-solid {
+}
+.fa-envelope-open-text {
+}
+.box__label {
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.fa-lock {
+}
+.box__remember {
+    display: flex;
+    justify-content: space-between;
+}
+.box-remember__password{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.checkbox {
+}
+.box__button:hover{
+    background-color: rgb(45, 150, 247);
+    cursor: pointer;
+}
+
+.box__button {
+    background-color: #054b64df;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    width: 340px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 17px;
+    transition: 0.7s;
+}
+.box__under {
+    margin-top: 20px;
+}
+.under__text {
+    text-align: center;
+    margin-top: 5px;
+}
+.under__register {
+    text-decoration: none;
+    color:  #054b64df;
+    padding-left: 7px;
+    transition: 0.7s;
+    font-weight: 600;
+}
+.under__register:hover{
+    color: rgb(33, 37, 40)
+}
+.input__email::placeholder{
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

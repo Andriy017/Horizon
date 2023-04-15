@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://niindo64.files.wordpress.com/2020/03/horizon-zero-dawn-14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header__burger{
+    display: none;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.107);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 120px;
+    z-index: 6;
+}
+.header__body {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    transition: 0.7s;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-item{
+    margin: 0 30px;
+    transition: 0.3s;
+}
+.header__menu-item a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.741);
+    font-family: fantasy;
+    font-weight: 500;
+    font-size: 21px;
+    transition: 0.3s;
+}
+.header__menu-item a:hover{
+    color: rgb(240, 21, 21); 
+
+}
+.logo:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.audio {
+    position: absolute;
+    width: 90px;
+    height: 130px;
+    left: 0;
+    top: 50%;
+    border-radius: 0 50% 50% 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(93, 92, 92, 0.849);
+    transition: 0.7s;
+    animation: musik 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate;
+}
+@keyframes musik{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.musik {
+    padding-left: 70px;
+    display: none;
+    transition: 0.7s;
+    z-index: 5;
+}
+.musik__icon{
+    font-size: 40px;
+    color: aliceblue;
+    padding-left: 15px;
+    animation: icon 0.75s linear infinite alternate;
+}
+@keyframes icon{
+    0%{ 
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+.audio:hover .musik{
+    display: block;
+}
+.audio:hover{
+    width: 480px;
+    z-index: 5;
+    height: 130px;
+    border-radius:0 50px 50px 0;
+}
+.main__body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.main__block-picture {
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 130px;
+}
+.block__picture {
+    width: 300px;
+    position: absolute;
+    border: 10px solid rgba(0, 0, 0, 0.416);
+}
+.block__picture:nth-child(1){
+    right: 1%;
+    width: 380px;
+    top: 11%;
+    z-index: 1;
+    animation: picture-1 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate;
+}
+@keyframes  picture-1{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.block__picture:nth-child(2){
+    left: 37%;
+    top: 4%;
+    width: 370px;
+    z-index: 4;
+    animation: picture-2 4.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate;
+}
+@keyframes picture-2{
+    0%{
+        transform: translateY(1200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.block__picture:nth-child(3){
+    left: 9%;
+    top: 18%;
+    width: 370px;
+    z-index: 3;
+    animation: picture-3 3.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)  alternate;
+}
+@keyframes picture-3{
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.footer__body {
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 1050px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.footer__block-text {
+    padding: 20px;
+
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    animation: text 1.2s cubic-bezier(0.39, 0.575, 0.565, 1)  alternate;
+}
+@keyframes text{
+    0%{
+        transform: translateY(900px);
+    }
+    100%{
+        transform:  translateY(0px);
+    }
+}
+.block__left {
+    max-width: 800px;
+    padding: 20px;
+    margin-right: 25px;
+    border-radius: 10px;;
+    background-color: rgba(204, 250, 53, 0.796);
+}
+.block__left-text {
+    font-size: 17px;
+    font-weight: 700;
+}
+.block__right {
+    width: 330px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(204, 250, 53, 0.786);
+}
+.block__right-text {
+    font-size: 17px;
+    font-weight: 700;
+}
+.block__info {
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.027);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+}
+.block__info-text {
+    font-size: 25px;
+    padding: 20px;
+    color:rgba(255, 255, 255, 0.71);
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-top: 70px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 767px) {
+    body{
+    background-image: url(https://chocobonplan.com/wp-content/uploads/2022/02/test-horizon-forbidden-west-screenshot-5-scaled.jpg);
+    }
+    .header__menu-item{
+        background-color: rgb(232, 102, 102);
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
+    .logo{
+        max-width:150px ;
+    }
+    .audio {
+        position: absolute;
+        width: 60px;
+        height: 100px;
+        left: 0;
+        top: 50%;
+        border-radius: 0 50% 50% 0;
+        display: flex;
+        align-items: center;
+        background-color: rgba(93, 92, 92, 0.849);
+        transition: 0.7s;
+        animation: musik 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate;
+    }
+    .musik__icon{
+        font-size: 30px;
+        color: aliceblue;
+        padding-left: 15px;
+        animation: icon 0.75s linear infinite alternate;
+    }
+    .audio:hover .musik{
+        display: block;
+    }
+    .audio:hover{
+        width: 440px;
+        z-index: 5;
+        height: 100px;
+        border-radius:0 50px 50px 0;
+    }
+    .main__block-picture{
+        flex-direction: column;
+        overflow: visible;
+        height: 1200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .block__picture {
+        width: 300px;
+        position: relative;
+        border: 10px solid rgba(0, 0, 0, 0.416);
+        margin: 30px 0 0 0;
+    }
+    .block__picture:nth-child(1){
+        right: 0;
+        width: 380px;
+        top:0;
+        z-index: 1;
+        animation: picture-1 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate;
+    }
+    @keyframes  picture-1{
+        0%{
+            transform: translateX(-600px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+    .block__picture:nth-child(2){
+        left: 0;
+        top: 0;
+        width: 370px;
+        z-index: 4;
+        animation: picture-2 4.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate;
+    }
+    @keyframes picture-2{
+        0%{
+            transform: translateY(1200px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    .block__picture:nth-child(3){
+        left: 0;
+        top: 0;
+        width: 370px;
+        z-index: 3;
+        animation: picture-3 3.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)  alternate;
+    }
+    @keyframes picture-3{
+        0%{
+            transform: translateX(-600px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    .footer__block-text {
+        margin: 1px auto;
+        display: flex;
+        flex-wrap: wrap;
+        animation: text 1.2s cubic-bezier(0.39, 0.575, 0.565, 1)  alternate;
+    }
+    @keyframes text{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform:  translateY(0px);
+        }
+    }
+    .block__left {
+        border-radius: 10px;;
+        background-color: rgba(230, 227, 227, 0.796);
+        margin: 2px 0;
+    }
+    .block__left-text {
+        font-size: 17px;
+        font-weight: 700;
+        color: rgb(250, 51, 51);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .block__right {
+        border-radius: 10px;
+        background-color: rgba(241, 241, 241, 0.779);
+        margin: 30px 0px;
+    }
+    .block__right-text {
+        font-size: 17px;
+        font-weight: 700;
+        color: rgb(250, 51, 51);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .block__info {
+        backdrop-filter: blur(30px);
+        background-color: rgba(230, 227, 227, 0.796);
+    }
+    .block__info-text {
+        font-size: 25px;
+        padding: 20px;
+        color: rgb(250, 51, 51);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 51, 51);
+        font-family: fantasy;
+        letter-spacing: 3px;
+    }
+}
+@media (max-width: 565px) {
+    .header__menu {
+        display: none;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .burger-line {
+        position: absolute;
+        top: 20px;
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: rgb(255, 51, 51);
+
+    }
+    .burger-line::before{
+        content: "";
+        width: 50px;
+        height: 3px;
+        top: 15px;
+        position: absolute;
+        background-color: rgb(255, 51, 51);
+    }
+    .burger-line::after{
+        content: "";
+        width: 50px;
+        height: 3px;
+        bottom: 15px;
+        position: absolute;
+        background-color: rgb(255, 51, 51);
+    }
+
+}
